@@ -1,0 +1,94 @@
+
+.headerPrincipal .container{
+    display: flex;
+    align-items: center; /*para dejar los items en el medio verticalmente*/
+    justify-content: space-between; /*para poner espacio entre los elementos ocupando todo el espacio dispobible*/
+}
+.headerPrincipal-nav{
+    display: flex;   
+}
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-around;
+}
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+.rodapePrincipal-navMap-list{
+    display:flex;
+    flex-direction: column; /*por defecto display flex alinea los items por 
+    rows o filas asi que hay que especificar el colum par que los alinea verticalmetne*/
+    height: 255px;
+    flex-wrap: wrap;/*el flex warp sirve para alinear horizontalmente  cuando el espacio asignado
+    de altura sea cumplido*/
+}
+
+/*
+A utilizar la propiedad width para aumentar el espacio de nuestro elemento
+Para que sirve el space-around
+A utilizar la propiedad flex-direction
+A utilizar la propiedad height para setear la altura de nuestro elemento
+A utilizar la propiedad flex-wrap*/
+
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    flex-direction: column;
+    
+    width: 21%;
+}
+
+/*media querys*/
+@media screen and (max-width: 768px){
+   
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .headerPrincipal-nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+        
+    }
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+    .rodapePrincipal-navMap-list{
+        height: auto;
+        flex-wrap: none;
+    }
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;   
+    }
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+}

@@ -1,0 +1,15 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 21%;
+    background-color: green;
+  }
